@@ -51,7 +51,7 @@ public class ExampleTest {
 
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt(); //사용자 입력값
-        String result = (input ==sum) ? "정답입니다!" : "틀렸습니다 정답은"+sum+"입니다";
+        String result = (input ==sum) ? "정답입니다!" : "틀렸습니다 정답은 "+sum+" 입니다";
         System.out.println(result);
 
     }

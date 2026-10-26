@@ -4,16 +4,16 @@ import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         ExampleTest exam = new ExampleTest();
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("숫자를 입력하세요 : ");
         int num = sc.nextInt();
         exam.evenOdd(num);
 
-        System.out.println("첫번째 숫자 : ");
+        System.out.print("첫번째 숫자 : ");
         int a = sc.nextInt();
-        System.out.println("두번째 숫자 : ");
+        System.out.print("두번째 숫자 : ");
         int b = sc.nextInt();
         exam.findMax(a,b);
 

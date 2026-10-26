@@ -16,6 +16,6 @@ public class Application {
         int first = 10;
         int second = 20;
         int result3 = calculator.multiTwoNumber2(first, second);
-        System.out.println(first+ "과" + second + "의 곱은 " + result3 + "입니다.");
+        System.out.println(first+ "과 " + second + "의 곱은 " + result3 + "입니다.");
     }
 }

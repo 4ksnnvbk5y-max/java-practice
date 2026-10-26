@@ -15,7 +15,7 @@ public class Calculator {
     // 메소드명 : sumTwoNumber
     // 두개의 전달인자를 받아 두수의 합을 반환
     public String sumTwoNumber(int num1, int num2) {
-        return num1 + "과" + num1 + "의 합은" + (num1 + num2) + "입니다.";
+        return num1 + "과 " + num2 + "의 합은 " + (num1 + num2) + "입니다.";
     }
     // 출력의 내용은 "10과 20의 합은 30입니다." 라는 문장을
     // 출력하는 기능
@@ -27,7 +27,7 @@ public class Calculator {
     // 출력의 내용은 "10과 20의 곱은 200입니다." 라는 문장을
     // 출력하는 기능
     String multiTwoNumber(int num1, int num2) {
-        return num1 + "과" + num2 + "의 곱은 " + (num1 * num2) + "입니다.";
+        return num1 + "과 " + num2 + "의 곱은 " + (num1 * num2) + "입니다.";
     }
 
 
