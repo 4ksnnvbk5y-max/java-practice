@@ -1,6 +1,7 @@
 package com.ohgiraffers.section01.level01.example;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class ExampleTest {
 
