@@ -20,7 +20,7 @@ public class Calculator {
     // 출력의 내용은 "10과 20의 합은 30입니다." 라는 문장을
     // 출력하는 기능
     public String sumTwoNumber(int first, int second){
-        return (first+second)+"";
+        return first + "과" + second + " 의 합은 " + (first+second) + "입니다";
 
     }
 
@@ -33,7 +33,7 @@ public class Calculator {
 
 
     public String multiTwoNumber(int first, int second){
-        return (first*second)+"";
+        return first + "과" + second + " 의 곱은 " + (first*second) + "입니다";
 
     }
     // 반환값 : int
