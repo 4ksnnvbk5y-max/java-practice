@@ -40,4 +40,8 @@ public class ExampleTest {
     *
     * 틀렸습니다 정답은 2 입니다.
     * */
+
+    public void randomMathQuiz(int num1, int num2){
+        
+    }
 }

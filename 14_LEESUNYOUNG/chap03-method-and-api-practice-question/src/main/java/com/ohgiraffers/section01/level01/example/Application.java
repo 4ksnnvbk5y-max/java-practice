@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Application {
     public static void main(String[] args) {
         ExampleTest exam = new ExampleTest();
+
         Scanner sc = new Scanner(System.in);
         System.out.print("숫자를 입력하세요: ");
         int first = sc.nextInt();
@@ -15,7 +16,14 @@ public class Application {
         int firstNumber = sc.nextInt();
         System.out.print("두번째 숫자: ");
         int secondNumber = sc.nextInt();
-        exam.findMAx(firstNumber,secondNumber);
+
+        exam.findMax(firstNumber,secondNumber);
+
+        System.out.println("num1 + num2 = ?");
+        int right = sc.nextInt();
+
+
+
 
     }
 }
