@@ -36,11 +36,13 @@ public class Calculator {
     }
 
     public String sumTwoNumber(int num1, int num2){
-        return "" + (num1 + num2);
+        int sum = num1 + num2;
+        return num1 + "과 " + num2 + "의 합은 " + sum + "입니다.";
     }
 
     public String multiTwoNumber(int num1, int num2){
-        return "" + (num1 * num2);
+        int result = num1 * num2;
+        return num1 + "과 " + num2 + "의 곱은 " + result + "입니다.";
     }
 
     public int multiTwoNumber2(int num1, int num2){
