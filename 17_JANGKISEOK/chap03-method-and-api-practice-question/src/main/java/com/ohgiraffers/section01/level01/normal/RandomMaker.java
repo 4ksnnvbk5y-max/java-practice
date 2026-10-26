@@ -1,5 +1,7 @@
 package com.ohgiraffers.section01.level01.normal;
 
+import java.util.Random;
+
 public class RandomMaker {
     // 기능형 클래스
     /*
@@ -14,4 +16,11 @@ public class RandomMaker {
      * 앞면
      *
      * */
+
+    public static String tossCoin(){
+        Random rand = new Random();
+        boolean isFront = rand.nextBoolean();
+
+        return isFront ? "앞면" : "뒷면";
+    }
 }

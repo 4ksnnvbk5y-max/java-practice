@@ -1,5 +1,7 @@
 package com.ohgiraffers.section01.level01.example;
 
+import java.util.Scanner;
+
 public class ExampleTest {
 
     /*
@@ -34,4 +36,21 @@ public class ExampleTest {
     *
     * 틀렸습니다 정답은 2 입니다.
     * */
+
+    public void evenOdd(int num){
+        System.out.println(num % 2 == 0 ? "짝수입니다." : "홀수입니다.");
+    }
+
+    public void findMax(int first, int second){
+        System.out.println("큰 수 : " + Math.max(first,second));
+    }
+
+    public void randomMathQuiz(int num1, int num2){
+        int correctAnswer = num1 + num2;
+        Scanner sc = new Scanner(System.in);
+        System.out.print(num1 + " + " + num2 + " = ");
+        int answer = sc.nextInt();
+        sc.nextLine();
+        System.out.println(answer == correctAnswer ? "정답입니다!" : "틀렸습니다 정답은 " + correctAnswer + "입니다.");
+    }
 }

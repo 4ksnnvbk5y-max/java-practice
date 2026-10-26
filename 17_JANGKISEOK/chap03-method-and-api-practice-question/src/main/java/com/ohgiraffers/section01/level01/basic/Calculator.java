@@ -31,5 +31,19 @@ public class Calculator {
     // 출력의 내용은 "10과 20의 곱은 200입니다." 라는 문장을
     // 출력하는 기능
 
+    public void checkMethod(){
+        System.out.println("메소드 호출 확인");
+    }
 
+    public String sumTwoNumber(int num1, int num2){
+        return "" + (num1 + num2);
+    }
+
+    public String multiTwoNumber(int num1, int num2){
+        return "" + (num1 * num2);
+    }
+
+    public int multiTwoNumber2(int num1, int num2){
+        return num1 * num2;
+    }
 }
