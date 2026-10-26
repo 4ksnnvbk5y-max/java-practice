@@ -13,5 +13,9 @@ public class Application3 {
          * ---- 출력 결과 ---
          * 남자입니다.
          * */
+
+        char gender = 'M';
+
+        System.out.println(gender == 'M' ? "남자입니다." : gender == 'F' ? "여자입니다." : "올바른 값을 입력해주세요.(M or F)");
     }
 }
