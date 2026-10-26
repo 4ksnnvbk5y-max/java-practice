@@ -2,6 +2,8 @@ package com.ohgiraffers.section01.level01.example;
 
 import java.util.Scanner;
 
+import static java.lang.Math.random;
+
 public class Application {
     public static void main(String[] args) {
         ExampleTest exam = new ExampleTest();
@@ -15,5 +17,10 @@ public class Application {
         System.out.print("두번쨰 숫자");
         int secondNumber = sc.nextInt();
         exam.findMax(firstNumber,secondNumber);
+
+        int a = (int)(random()*10 +1);
+        int b = (int)(random()*10 +1);
+        exam.randomMathQuiz(a,b);
+
     }
 }

@@ -45,4 +45,12 @@ public class ExampleTest {
     *
     * 틀렸습니다 정답은 2 입니다.
     * */
+    public void randomMathQuiz(int num1, int num2) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println(num1 + "+" + num2 + "=?");
+        int ans = sc.nextInt();
+        int result = num1 + num2;
+        System.out.println((ans == result) ? "정답입니다" : "틀렸습니다 정답은 " + result + "입니다");
+    }
 }
