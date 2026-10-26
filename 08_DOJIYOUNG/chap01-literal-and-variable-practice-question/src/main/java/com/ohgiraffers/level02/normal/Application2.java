@@ -12,6 +12,16 @@ public class Application2 {
          * 평균 : 67
          *  */
 
+        float score1 = 80.5f;
+        float score2 = 50.6f;
+        float score3 = 70.8f;
+
+        int sum = (int)(score1+score2+score3);
+        int avg = (int)sum/3;
+
+        System.out.println("총점 : "+sum);
+        System.out.println("평균 : "+avg);
+
 
     }
 }
