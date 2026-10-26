@@ -14,4 +14,8 @@ public class RandomMaker {
      * 앞면
      *
      * */
+    public static String tossCoin(){
+        int coin = (int)(Math.random()*2);
+        return coin == 1 ? "앞면" : "뒷면";
+    }
 }
