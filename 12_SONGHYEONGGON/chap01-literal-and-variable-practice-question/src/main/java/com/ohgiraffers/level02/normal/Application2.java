@@ -1,5 +1,6 @@
 package com.ohgiraffers.level02.normal;
 
+
 public class Application2 {
 
     public static void main(String[] args) {
@@ -12,6 +13,11 @@ public class Application2 {
          * 평균 : 67
          *  */
 
+        double A = 80.5;
+        double B = 50.6;
+        double C = 70.8;
 
+        System.out.println("총점 : " + (int)(A + B + C));
+        System.out.println("평균 : " + (int)(A + B + C)/3);
     }
 }
