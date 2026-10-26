@@ -7,7 +7,7 @@ public class ExampleTest {
     /*
     메소드명 : evenOdd(int value)
     반환형 : void
-    사용자로부터 정수하나를 입력받아
+    사용자로부터 정수하나를 입력받아   -> Scanner생각해야함
     해당 숫자가 짝수인지 홀수인지 판별하세요.
 
     --- 출력 예시 ---
@@ -15,21 +15,22 @@ public class ExampleTest {
 
     홀수입니다
     * */
-    void evenOdd(int value){
-        String result = value % 2 ==0 ? "짝수입니다" : "홀수입니다"
-        return;
+
+    public void evenOdd(int value){
+        String result = (value % 2 ==0) ? "짝수입니다" : "홀수입니다";
+        System.out.println(result);
     }
 
     /*
     * 메소드명 : findMax(int first, int second)
     * 리턴타입 : void
     * 두 수중 더 큰수 찾기
-    * 사용자로부터 정수 두개를 입력받아 더큰수를 출력
+    * 사용자로부터 정수 두개를 입력받아 더 큰수를 출력
     * */
 
-    void findMax(int first, int second){
+    public void findMax(int first, int second){
         int MaxNum = first > second ? first : second;
-        return;
+        System.out.println(MaxNum);
     }
 
     /*
@@ -45,17 +46,13 @@ public class ExampleTest {
     *
     * 틀렸습니다 정답은 2 입니다.
     * */
-    void randomMathQuiz(int num1 , int num2 ){
-        int random1 = (int)(Math.random()*10)+1;
-        int random2 = (int)(Math.random()*10)+1;
-        int sum =  random1 + random2;
-        String sum2 = random2 + random1+"";
+    public void randomMathQuiz(int num1 , int num2 ){
+        int sum = num1+num2;
 
-        System.out.println(random1+" + "+random2+ " = ?");
         Scanner sc = new Scanner(System.in);
-        int input = sc.nextInt();
+        int input = sc.nextInt(); //사용자 입력값
+        String result = (input ==sum) ? "정답입니다!" : "틀렸습니다 정답은"+sum+"입니다";
+        System.out.println(result);
 
-        String result2 = (sum ==input) ? "정답입니다!" : "틀렸습니다 정답은"+" result "+"입니다.";
-        System.out.println(result2);
     }
 }
