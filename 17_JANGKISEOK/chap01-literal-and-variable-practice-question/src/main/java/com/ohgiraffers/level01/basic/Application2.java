@@ -13,6 +13,13 @@ public class Application2 {
          * 둘레 : 97.8
          *  */
 
+        double weight = 12.5;
+        double height = 36.4;
 
+        double area = weight * height;
+        double perimeter = (weight + height) * 2;
+
+        System.out.println("면적 : " + area);
+        System.out.println("둘레 : " + perimeter);
     }
 }
