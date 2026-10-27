@@ -17,5 +17,14 @@ public class Application4 {
         * 나이를 입력하세요 : 29
         * 성인
         * */
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("나이를 입력하세요 : ");
+        int age = sc.nextInt();
+
+        String result = (age <= 13)? "어린이" : (age <= 19)? "청소년" : "성인";
+        System.out.println(result);
+
     }
 }

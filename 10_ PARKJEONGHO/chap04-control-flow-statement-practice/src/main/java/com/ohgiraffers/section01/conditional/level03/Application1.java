@@ -1,5 +1,6 @@
 package com.ohgiraffers.section01.conditional.level03;
 
+import java.util.Enumeration;
 import java.util.Scanner;
 
 public class Application1 {
@@ -19,5 +20,23 @@ public class Application1 {
          * 4 + 3 = 7
          */
 
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("첫 번째 정수 : ");
+        int first = sc.nextInt();
+        System.out.print("두 번째 정수 : ");
+        int second = sc.nextInt();
+        System.out.print("연산기호를 입력하세요 (+, -, *, /, %) : ");
+        char op = sc.next().charAt(0);
+
+        int result = switch (op) {
+            case '+' -> first + second;
+            case '-' -> first - second;
+            case '*' -> first * second;
+            case '/' -> first / second;
+            case '%' -> first % second;
+            default -> 0;
+        };
+        System.out.println(first + "" + second + "=" + result);
     }
 }
