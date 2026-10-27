@@ -38,8 +38,8 @@ public class Application5 {
             System.out.println("1~9 사이의 정수를 입력해야 합니다.");
             return;
         }
-
-        for(int i = 1; i <= num; i++) {
+        // StingBuilder를 사용하여 왼쪽과 오른쪽 값을 생성하고 출력하는 방법
+        /*for(int i = 1; i <= num; i++) {
             StringBuilder leftSide = new StringBuilder();
             StringBuilder rightSide = new StringBuilder();
 
@@ -53,7 +53,23 @@ public class Application5 {
             int rightValue = Integer.parseInt(rightSide.toString())*8+i;
 
             System.out.printf("%" + (num + 1) + "d x 8 + %d = %d%n", leftValue, i, rightValue);
-        }
+        }*/
 
+        // 반복/조건문만을 사용하여 왼쪽과 오른쪽 값을 생성하고 출력하는 방법 추가
+        String leftSide = "";
+        String rightSide = "";
+        for(int i = 1; i <= num; i++) {
+            leftSide += i;
+            rightSide += i;
+            System.out.println(Application5.printWhiteSpace(num, i) + leftSide + " x 8 + " + i + " = " + (Integer.parseInt(rightSide) * 8 + i));
+        }
+    }
+
+    public static String printWhiteSpace(int inputNum, int flowNum) {
+        String result = "";
+        for(int i = 1; i <= inputNum - flowNum; i++) {
+            result += " ";
+        }
+        return result;
     }
 }
