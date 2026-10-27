@@ -37,6 +37,6 @@ public class Application1 {
             case '%' -> first % second;
             default -> 0;
         };
-        System.out.println(first + "" + second + "=" + result);
+        System.out.println(first +  + second + "=" + result);
     }
 }
