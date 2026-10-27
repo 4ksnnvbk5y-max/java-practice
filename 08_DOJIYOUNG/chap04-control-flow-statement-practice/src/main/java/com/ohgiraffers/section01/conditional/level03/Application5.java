@@ -30,5 +30,17 @@ public class Application5 {
         *
         * */
 
+        Scanner sc = new Scanner(System.in);
+        System.out.print("정수 하나를 입력 하세요 : ");
+        int n = sc.nextInt();
+
+        String now= "";
+        int  result = 1;
+        for(int i=1; i<=n ; i++){
+            now+=i;
+            result = Integer.parseInt(now)*8+i;
+            System.out.println(now+" X 8"+i +" = " +result );
+        }
+
     }
 }

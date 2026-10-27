@@ -27,5 +27,30 @@ public class Application4 {
         *
         * */
 
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("국어 점수 :");
+        int s1 = sc.nextInt();
+        System.out.print("영어 점수 :");
+        int s2 = sc.nextInt();
+        System.out.print("수학 점수 :");
+        int s3 = sc.nextInt();
+
+        int sum = s1+s2+s3;
+        float avg = (float)sum/3;
+
+        System.out.println("국어점수 :"+s1);
+        System.out.println("영어점수 :"+s2);
+        System.out.println("수학점수 :"+s3);
+
+        if(avg>=60 && s1>=40 && s2>=40 && s3>=40){
+            System.out.println("합계 :"+sum);
+            System.out.println("평균 :"+avg);
+            System.out.println("축하합니다, 합격입니다!");
+        }else{
+            System.out.println("불합격입니다");
+        }
+
+
     }
 }

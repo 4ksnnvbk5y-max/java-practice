@@ -23,5 +23,37 @@ public class Application3 {
          * 수학 점수 미달로 불합격입니다.
          * */
 
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("국어 점수를 입력하세요 :");
+        int s1 = sc.nextInt();
+        System.out.print("영어 점수를 입력하세요 :");
+        int s2 = sc.nextInt();
+        System.out.print("수학 점수를 입력하세요 :");
+        int s3 = sc.nextInt();
+        int avg = (s1+s2+s3)/3;
+
+
+        if(avg<=60){
+            System.out.println("평균점수 미달로 불합격입니다.");
+            if(s1<40){
+                System.out.println("국어 점수 미달로 불합격입니다.");
+            }
+            if(s2<40){
+                System.out.println("영어 점수 미달로 불합격입니다.");
+            }
+            if(s3<40){
+                System.out.println("수학 점수 미달로 불합격입니다.");
+            }
+        }else{
+            if(s1>=40 && s2 >=40 && s3>=40){
+                System.out.println("합격입니다!");
+            }
+        }
+
+
+
+
     }
 }
