@@ -15,6 +15,20 @@ public class Application1 {
          * 나누기한 나머지 : 20
          * */
 
+        int a = 20;
+        int b = 30;
+
+        int plus = a + b;
+        int minus = a - b;
+        int multiplied = a * b;
+        int divide = a / b;
+        int quotient = a % b;
+
+        System.out.print("더하기 결과 : " + plus );
+        System.out.print("\n빼기 결과 : " + minus);
+        System.out.print("\n곱하기 결과 : " + multiplied);
+        System.out.print("\n나누기한 몫 : " + divide);
+        System.out.print("\n나누기한 나머지 : " + quotient);
 
 
     }

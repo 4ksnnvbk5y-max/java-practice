@@ -12,6 +12,16 @@ public class Application2 {
          * 평균 : 67
          *  */
 
+        double kor = 80.5;
+        double mat = 50.6;
+        double eng = 70.8;
+
+        int total = (int) (kor + mat + eng);
+        int average = total / 3;
+
+        System.out.println("총점 : " + total);
+        System.out.println("평균 : " + average);
+
 
     }
 }
