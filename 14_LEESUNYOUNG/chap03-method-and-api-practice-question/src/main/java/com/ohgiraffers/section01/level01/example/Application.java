@@ -19,8 +19,9 @@ public class Application {
 
         exam.findMax(firstNumber,secondNumber);
 
-        System.out.println("num1 + num2 = ?");
-        int right = sc.nextInt();
+        int randomNum1 = (int)(Math.random() * 10) + 1;
+        int randomNum2 = (int)(Math.random() * 10) + 1;
+        exam.randomMathQuiz(randomNum1,randomNum2);
 
 
 
