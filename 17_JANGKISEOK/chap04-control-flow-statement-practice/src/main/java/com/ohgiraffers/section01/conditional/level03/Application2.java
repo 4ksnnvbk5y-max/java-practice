@@ -23,5 +23,30 @@ public class Application2 {
          * 바나나의 가격은 3000원 입니다.
          * */
 
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("과일 이름을 입력하세요 : ");
+        String fruit = sc.next();
+        sc.nextLine();
+
+        int cost = 0;
+        switch(fruit){
+            case "사과" :
+                cost = 1000;
+                break;
+            case "바나나" :
+                cost = 3000;
+                break;
+            case "복숭아" :
+                cost = 2000;
+                break;
+            case "키위" :
+                cost = 5000;
+                break;
+            default:
+                System.out.println("준비된 상품이 없습니다.");
+                return;
+        }
+        System.out.println(fruit + "의 가격은 " + cost + "원 입니다.");
     }
 }

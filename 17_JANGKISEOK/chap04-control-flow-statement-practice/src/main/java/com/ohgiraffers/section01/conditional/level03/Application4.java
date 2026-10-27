@@ -27,5 +27,35 @@ public class Application4 {
         *
         * */
 
+        Scanner sc = new Scanner(System.in);
+
+
+        System.out.print("국어 점수 : ");
+        int koreanScore = sc.nextInt();
+        sc.nextLine();
+
+        System.out.print("영어 점수 : ");
+        int englishScore = sc.nextInt();
+        sc.nextLine();
+
+        System.out.print("수학 점수 : ");
+        int mathScore = sc.nextInt();
+        sc.nextLine();
+
+        int totalScore = koreanScore + englishScore + mathScore;
+        float averageScore = totalScore / 3f;
+
+
+        if(koreanScore >= 40 && englishScore >= 40 && mathScore >= 40 && averageScore >= 60){
+            System.out.println("국어점수 : " + koreanScore);
+            System.out.println("영어점수 : " + englishScore);
+            System.out.println("수학점수 : " + mathScore);
+            System.out.println("합계 : " + totalScore);
+            System.out.println("평균 : " + averageScore);
+            System.out.println("축하합니다, 합격입니다!");
+        }
+        else{
+            System.out.println("불합격입니다.");
+        }
     }
 }

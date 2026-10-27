@@ -30,5 +30,21 @@ public class Application5 {
         *
         * */
 
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("정수 하나를 입력하세요 : ");
+        int num = sc.nextInt();
+        sc.nextLine();
+
+        int tempNum = 0;
+        for(int i = 1; i <= num; i++){
+            tempNum = tempNum * 10 + i;
+            int result = tempNum * 8 + i;
+            for(int j = 0; j < num - i; j++){
+                System.out.print(" ");
+            }
+            System.out.println(tempNum + " x " + 8 + " + " + i + " = " + result);
+        }
+
     }
 }
