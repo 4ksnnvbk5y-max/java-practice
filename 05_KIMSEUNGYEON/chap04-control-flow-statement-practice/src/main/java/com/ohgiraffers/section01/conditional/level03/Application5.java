@@ -34,6 +34,11 @@ public class Application5 {
         System.out.print("정수하나를 입력하세요 : ");
         int num = sc.nextInt();
 
+        if (num < 1 || num > 9) {
+            System.out.println("1~9 사이의 정수를 입력해야 합니다.");
+            return;
+        }
+
         for(int i = 1; i <= num; i++) {
             StringBuilder leftSide = new StringBuilder();
             StringBuilder rightSide = new StringBuilder();
