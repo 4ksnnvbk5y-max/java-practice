@@ -14,8 +14,8 @@ public class Application2 {
          * 청소년
          * */
         int age =  (int)(Math.random()* 29 + 1);
-        System.out.println("age = " + age);
-        String result = (age <= 13) ? "어린이" : (age <= 19) ? "청소년" : "성인";
+        System.out.println("age = " + age); //age = 18
+        String result = (age <= 13) ? "어린이" : (age <= 19) ? "청소년" : "성인"; //청소년
         System.out.println(result);
 
     }

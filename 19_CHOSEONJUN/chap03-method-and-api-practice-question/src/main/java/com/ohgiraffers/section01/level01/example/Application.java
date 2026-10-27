@@ -9,8 +9,10 @@ public class Application {
         evenOdd(scanner.nextInt());
         System.out.print("두 수를 입력하세요.");
         findMax(scanner.nextInt(), scanner.nextInt());
-        System.out.print("합계의 두 수를 입력하세요.");
-        randomMathQuiz(scanner.nextInt(), scanner.nextInt());
+        int randomNum1 = (int) (Math.random() * 10) +1;
+        int randomNum2 = (int) (Math.random() * 10) +1;
+        System.out.println(randomNum1 + " " +randomNum2);
+        randomMathQuiz(randomNum1, randomNum2);
     }
 
     public static void evenOdd(int value) {
@@ -29,7 +31,5 @@ public class Application {
         int number = scanner.nextInt();
         System.out.println("입력값: " + number);
         System.out.println((number == (num1 + num2))? "정답입니다": "틀렸습니다" +" 정답은 " + (num1+ num2) +"입니다");
-
     }
-
 }

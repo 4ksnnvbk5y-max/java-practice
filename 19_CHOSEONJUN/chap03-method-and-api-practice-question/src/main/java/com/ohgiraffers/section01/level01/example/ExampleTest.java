@@ -1,5 +1,7 @@
 package com.ohgiraffers.section01.level01.example;
 
+import java.util.Scanner;
+
 public class ExampleTest {
 
     /*
@@ -24,7 +26,7 @@ public class ExampleTest {
     /*
     * 메소드명 randomMathQuiz(int num1, int num2)
     * 리턴타입 : void
-    * 1~10 사이의 임의의 정수 2개를 생성
+    * 1~10 사이의 임의의 정수 2개를 생성 ---> random() Random
     * 사용자에게 "num1 + num2 = ?" 뭘까라고 질문
     * 사용자로부터 정답을 입력받는다.
     * 사용자의 답이 실제 정답과 일치하는지 판별하고 결과를 출려
