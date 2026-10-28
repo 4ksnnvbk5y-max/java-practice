@@ -13,6 +13,11 @@ public class Application2 {
          * 둘레 : 97.8
          *  */
 
+        float width = 12.5f;
+        float height = 36.4f;
+
+        System.out.println("면적 : " +(width*height));
+        System.out.println("둘레 : " +(2*width+2*height));
 
     }
 }

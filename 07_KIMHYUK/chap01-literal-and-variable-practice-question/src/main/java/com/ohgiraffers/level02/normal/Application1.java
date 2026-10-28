@@ -12,5 +12,11 @@ public class Application1 {
          * */
 
 
+        char ch = 'a';
+
+        int unicode = ch;
+
+        System.out.println("문자 a의 unicode : " + unicode);
+
     }
 }
